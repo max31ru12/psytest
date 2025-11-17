@@ -1918,15 +1918,8 @@
         e.preventDefault()
 
         const formData = new FormData(form)
-        let total = 0
 
-        for (const [key, value] of formData.entries()) {
-            if (key !== "division") {
-                total += Number(value)
-            }
-        }
-
-        const payload = {total: total, division: formData.get("division")}
+        const payload = Object.fromEntries(formData.entries())
 
         const response = await fetch("/test", {
             method: "POST",
@@ -1936,7 +1929,11 @@
             body: JSON.stringify(payload)
         })
 
-        window.location.href = "/finish"
+        if (response.ok) {
+            window.location.href = "/finish"
+        } else {
+            alert("Произошла ошибка при отправке формы")
+        }
     })
 
 </script>

@@ -105,8 +105,25 @@ input[type="radio"] {
     margin: 10px 0;
 }
 
+.score {
+    position: relative;
+}
+
+.score input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    width: 1px;
+    height: 1px;
+}
+
 .score input {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    /* можно ещё убрать pointer-events, но лучше оставить —
+       так будет работать фокус с клавиатуры */
 }
 
 .score span {
