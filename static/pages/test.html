@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестирование</title>
+    <link rel="stylesheet" href="/static/styles/test.css">
+</head>
+<body>
+<header></header>
+<main>
+    <div class="container">
+
+        <div class="info-container">
+            <h1>Социологическая анкета по методике оценки морально-политического и психологического состояния
+                военнослужащих Вооруженных Сил Российской Федерации в мирное время</h1>
+            <h2><b>Анкета</b></h2>
+            <h3>Для военнослужащих Вооруженных Сил Российской Федерации</h3>
+            <div>
+                <h4>Уважаемый товарищ!</h4>
+                <p></p>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form action="" method="post" id="testForm">
+                <div class="question-container">
+                    <label>1. Укажите ваш возраст (лет):</label>
+                    <input placeholder="Возраст..." class="text-input" type="text" name="q1" required>
+                </div>
+                <div class="question-container">
+                    <label>2. Укажите вашу выслугу лет (календарную):</label>
+                    <input placeholder="Выслуга..." class="text-input" type="text" name="q2" required>
+                </div>
+                <div class="question-container">
+                    <label>3. К какой категории военнослужащих вы относитесь?:</label>
+                    <label><input type="radio" name="q3" value="1" required>Офицер</label>
+                    <label><input type="radio" name="q3" value="2">Военнослужащий по контракту</label>
+                    <label><input type="radio" name="q3" value="3">Военнослужащий по призыву</label>
+                </div>
+
+                <div class="question-container">
+                    <p>4. В настоящее время для России существует военная опасность</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q4" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q4" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>5. Граждане России поддерживают вооруженные силы</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q5" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q5" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>6. Мои сослуживцы гордятся принадлежностью к Вооруженным Силам</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q6" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q6" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>7. Мои сослуживцы гордятся принадлежностью к своему виду (роду) войск</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q7" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q7" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>8. Мои сослуживцы гордятся принадлежностью к своей части (подразделению)</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q8" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q8" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>9. Мои сослуживцы не склонны доверять сообщениям антироссийского содержания</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q9" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q9" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>10. Я доверяю военно-политическому руководству нашей страны</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q10" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q10" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>11. Я согласен с утверждением, что войска стран НАТО наши враги</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q11" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q11" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>12. Военнослужащие моего подразделения информированы о военно-политических событиях в мире</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q12" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q12" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>13. Военнослужащие моего подразделения информированы о военно-политических событиях в регионе
+                        дислокации</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q13" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q13" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>14. Военнослужащие моего подразделения информированы о военно-политических событиях, связанных с
+                        выполнением Вооруженными Силами боевых задач</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q14" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q14" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>15. практически все мои товарищи уверены в военной мощи России</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q15" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q15" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>16. Социально-политическая обстановка в стране за последний год улучшилась</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q16" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q16" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>17. Я хочу продолжать службу в ВС РФ</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q17" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q17" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы не хотите продолжать службу, то напишите, почему</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q17.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>18. Военная служба является для меня ценностью</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q18" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q18" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>19. Я готов к участию в боевых действиях</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q19" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q19" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы не готовы к учасию в боевых действиях, то напишите, почему</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q19.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>20. Мои ближайшие родственники хорошо относятся к моей службе в ВС РФ</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q20" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q20" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>21. Я испытываю чувство спокойствия</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q21" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q21" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>22. У меня рабочий настрой</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q22" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q22" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>23. Я уверен в себе и своих силах</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q23" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q23" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>24. Я надеюсь на лучшее</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q24" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q24" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>25. У меня есть опыт участия в боевых действиях</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q25" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q25" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>26. У меня есть опыт несения боевого дежурства, боевой службы</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q26" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q26" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>27. Я уверен в собственной профессиональной готовности выполнять боевые задачи</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q27" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q27" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы не уверены в собственной профессиональной готовности выполнить боевые задачи, то напишите, почему</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q27.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>28. Я уверен в профессионализме своих командиров</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q28" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q28" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>29. Я уверен в своих сослуживцах</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q29" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q29" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>30. Я удовлетворен взаимоотношениями в коллективе</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q30" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q30" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы не удовлетворены взаимоотношениями в коллективе, то напишите, почему</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q30.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>31. Я высоко оцениваю текущий уровень социальной поддержки государством российских военнослужащих</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q31" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q31" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы оцениваете уровень социальной поддержки как низкий, напишите, в чем это проявляется</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q31.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>32. Я высоко оцениваю текущий уровень социальной поддержки государством членов семей военнослужащих</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q32" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q32" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы оцениваете уровень социальной поддержки членов семей как низкий, напишите, в чем это проявляется</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q32.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>33. Я полностью обеспечен выщевым имуществом</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q33" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q33" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы не полностью обеспечены вещевым имуществом, то напишите, каких элементов не хвататет</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q33.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>34. Я высоко оцениваю качество вещевого имущества</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q34" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q34" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>35. Военнослужащим нашего подразделения предоставляется возможность восстанавливать свои силы после выполнения повседневных задач</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q35" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q35" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вам и Вашим сослуживцам не предоставляется возможность для отдыха, то напишите, почему</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q35.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>36. Медицинские услуги для меня всегда доступны</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q36" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q36" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>37. Я высоко оцениваю качество медицинских услуг</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q37" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q37" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>38. Я уверен в боевых возможностях вооружения и военной специальной техники моего подразделения</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q38" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q38" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы не уверены в боевых возможностях вооружения и военной техники, то напишите, какие именно образцы вы имеете ввиду</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q38.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <p>39. Я уверен в надежности вооружения и военной специальной техники моего подразделения</p>
+                    <div class="score-group">
+                        <label class="score">
+                            <input type="radio" name="q39" value="0" required>
+                            <span>0</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="1">
+                            <span>1</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="2">
+                            <span>2</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="3">
+                            <span>3</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="4">
+                            <span>4</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="5">
+                            <span>5</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="6">
+                            <span>6</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="7">
+                            <span>7</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="8">
+                            <span>8</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="9">
+                            <span>9</span>
+                        </label>
+                        <label class="score">
+                            <input type="radio" name="q39" value="10">
+                            <span>10</span>
+                        </label>
+                    </div>
+                    <label>Если Вы не уверены в надежности вооружения и военной техники, то напишите, какие именно образцы вы имеете ввиду</label>
+                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q39.1">
+                    <hr>
+                </div>
+
+                <div class="question-container">
+                    <label>40. Напишите, пожалуйста, что бы вы хотели довести до руководства министерства Российской Федерации</label>
+                    <input placeholder="..." class="text-input" type="text" name="q40">
+                </div>
+
+
+                <div class="submit-button-container">
+                    <button class="submit-button" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer></footer>
+
+<script>
+    const form = document.getElementById("testForm")
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault()
+
+        const formData = new FormData(form)
+        let total = 0
+
+        for (const [key, value] of formData.entries()) {
+            if (key !== "division") {
+                total += Number(value)
+            }
+        }
+
+        const payload = {total: total, division: formData.get("division")}
+
+        const response = await fetch("/test", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(payload)
+        })
+
+        window.location.href = "/finish"
+    })
+
+</script>
+</body>
+</html>

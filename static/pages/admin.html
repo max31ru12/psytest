@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="/static/styles/admin.css">
+    <script>
+        const password = prompt("Введите пароль")
+        if (password !== "1234") {
+            alert("Вам не разрешено просматривать эту страницу")
+            window.location.href = "/"
+        }
+    </script>
 </head>
 <body>
-$END$
+    <div class="results-info-container">
+        <h1>Результаты теста</h1>
+        <p>Количество человек, прошедших тест:
+            <strong>
+                <span id="count">...</span>
+            </strong>
+        </p>
+    </div>
+    <div class="download-button-container">
+        <a href="/admin/test/results/csv">
+            <button class="download-button">Скачать результаты CSV</button>
+        </a>
+        <a href="/admin/test/results/xlsx">
+            <button class="download-button">Скачать результаты XLSX</button>
+        </a>
+    </div>
+
+    <script>
+        async function loadCount() {
+            try {
+                const response = await fetch("/admin/test/results/count");
+                const count = await response.json();
+                document.getElementById("count").textContent = count;
+            } catch (e) {
+                console.error("Ошибка загрузки количества:", e);
+                document.getElementById("count").textContent = "Ошибка";
+            }
+        }
+
+        loadCount();
+    </script>
+
 </body>
 </html>

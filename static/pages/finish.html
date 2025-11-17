@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Психологический тест — результат</title>
+    <link rel="stylesheet" href="/static/styles/finish.css">
 </head>
 <body>
-$END$
+    <div class="page-wrapper">
+        <div class="test-container">
+            <h1 class="test-title">Тест завершён</h1>
+            <p class="test-subtitle">
+                Спасибо, что прошли психологический тест.
+                Ниже отображается ваш результат.
+            </p>
+
+            <div class="buttons-row">
+                <button class="primary-button" onclick="window.location.href='/test'">
+                    Пройти тест ещё раз
+                </button>
+                <button class="secondary-button" onclick="window.location.href='/'">
+                    На главную
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Пример: подставить результат из query-параметра ?score=...
+        const params = new URLSearchParams(window.location.search);
+        const score = params.get("score");
+        if (score !== null) {
+            document.getElementById("result-score").textContent = score;
+        }
+    </script>
 </body>
 </html>

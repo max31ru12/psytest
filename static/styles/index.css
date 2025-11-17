@@ -2,46 +2,56 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, sans-serif;
-    box-sizing: border-box;
     --text-color: #4B465C;
-    --border-color: #aba9a9;
-    --border-focus-volor: #3382d9;
-    --border-focus-color: #3d93f6
 }
 
+body {
+    min-height: 100vh;
+    background-color: #dedede;
+}
 
-.results-info-container {
+.container {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    align-items: center;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.page-title-container {
+    margin-bottom: 20px;
+}
+
 h1 {
-    margin-top: 5vh;
+
+}
+
+.page-info-container {
     margin-bottom: 20px;
 }
 
 p {
-    font-size: 20px;
     color: var(--text-color);
+    text-align: center;
 }
 
-a {
-    all: unset;
-}
 
-.download-button-container {
+
+.start-button-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    gap: 20px;
 }
 
-.download-button {
-    width: 240px;
-    height: 80px;
+.start-button {
+    width: 200px;
+    height: 50px;
     background-color: #3382d9;
     border: 1px solid #dad8d8;
     border-radius: 12px;
@@ -50,10 +60,9 @@ a {
     box-shadow: 0 4px 14px rgba(49, 130, 206, 0.35);
     cursor: pointer;
     color: white;
-    padding-inline: 40px;
 }
 
-.download-button:hover {
+.start-button:hover {
     transform: translateY(-2px);
     background-color: #4999f5;
 }
