@@ -19,6 +19,7 @@ def init_db():
             created_at TEXT NOT NULL,
 
             -- Числовые ответы
+            division TEXT NOT NULL,
             q1  INTEGER NOT NULL,
             q2  INTEGER NOT NULL,
             q3  INTEGER NOT NULL,
@@ -98,6 +99,7 @@ def save_results(answers):
     numeric_fields = [f"q{i}" for i in range(1, 40)]  # q1..q39
 
     text_fields = [
+        "division",
         "q17_1",
         "q19_1",
         "q30_1",

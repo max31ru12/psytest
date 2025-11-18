@@ -24,11 +24,15 @@
         <div class="form-container">
             <form action="" method="post" id="testForm">
                 <div class="question-container">
-                    <label>1. Укажите ваш возраст (лет):</label>
+                    <label>Укажите ваше подразделение:</label>
+                    <input placeholder="Подразделение..." class="text-input" type="text" name="division" required>
+                </div>
+                <div class="question-container">
+                    <label>1. Укажите ваш возраст (лет) - число:</label>
                     <input placeholder="Возраст..." class="text-input" type="text" name="q1" required>
                 </div>
                 <div class="question-container">
-                    <label>2. Укажите вашу выслугу лет (календарную):</label>
+                    <label>2. Укажите вашу выслугу лет (календарную) - число:</label>
                     <input placeholder="Выслуга..." class="text-input" type="text" name="q2" required>
                 </div>
                 <div class="question-container">
@@ -1474,7 +1478,7 @@
                         </label>
                     </div>
                     <label>Если Вы оцениваете уровень социальной поддержки как низкий, напишите, в чем это проявляется</label>
-                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q31.1">
+                    <input placeholder="Укажите, в чем это проявляется..." class="text-input" type="text" name="q31.1">
                     <hr>
                 </div>
 
@@ -1527,12 +1531,12 @@
                         </label>
                     </div>
                     <label>Если Вы оцениваете уровень социальной поддержки членов семей как низкий, напишите, в чем это проявляется</label>
-                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q32.1">
+                    <input placeholder="Укажите, в чем это проявляется..." class="text-input" type="text" name="q32.1">
                     <hr>
                 </div>
 
                 <div class="question-container">
-                    <p>33. Я полностью обеспечен выщевым имуществом</p>
+                    <p>33. Я полностью обеспечен вещевым имуществом</p>
                     <div class="score-group">
                         <label class="score">
                             <input type="radio" name="q33" value="0" required>
@@ -1580,7 +1584,7 @@
                         </label>
                     </div>
                     <label>Если Вы не полностью обеспечены вещевым имуществом, то напишите, каких элементов не хвататет</label>
-                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q33.1">
+                    <input placeholder="Укажите, каких элементов не хватает..." class="text-input" type="text" name="q33.1">
                     <hr>
                 </div>
 
@@ -1839,7 +1843,7 @@
                         </label>
                     </div>
                     <label>Если Вы не уверены в боевых возможностях вооружения и военной техники, то напишите, какие именно образцы вы имеете ввиду</label>
-                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q38.1">
+                    <input placeholder="Укажите образцы..." class="text-input" type="text" name="q38.1">
                     <hr>
                 </div>
 
@@ -1892,7 +1896,7 @@
                         </label>
                     </div>
                     <label>Если Вы не уверены в надежности вооружения и военной техники, то напишите, какие именно образцы вы имеете ввиду</label>
-                    <input placeholder="Укажите причину..." class="text-input" type="text" name="q39.1">
+                    <input placeholder="Укажите образцы..." class="text-input" type="text" name="q39.1">
                     <hr>
                 </div>
 
@@ -1918,8 +1922,11 @@
         e.preventDefault()
 
         const formData = new FormData(form)
+        const payload = {}
 
-        const payload = Object.fromEntries(formData.entries())
+        for (let [key, value] of formData.entries()) {
+            payload[key] = value
+        }
 
         const response = await fetch("/test", {
             method: "POST",

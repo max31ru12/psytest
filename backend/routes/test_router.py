@@ -15,6 +15,7 @@ async def get_test_page():
 
 
 class SubmitTestForm(BaseModel):
+    division: str
     q1: int
     q2: int
     q3: int
